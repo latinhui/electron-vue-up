@@ -5,10 +5,14 @@ import App from './App'
 import router from './router'
 import store from './store'
 import 'polyfill-object.fromentries';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
 
 /* eslint-disable no-new */
 new Vue({
