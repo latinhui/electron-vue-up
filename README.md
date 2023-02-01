@@ -4,7 +4,11 @@
 
 解决electron升级中的很多问题，少踩点坑。
 
-1.提升electron版本为22.1.0，解决了之前版本2.0.2的诸多问题
+1.提升electron版本为22.1.0，解决了之前版本2.0.2的诸多问题，包括但不限于：
+
+    Cannot find module 'polyfill-object.fromentries'
+    Cannot read properties of undefined (reading 'app') at new ElectronStore
+
 
 2.修复了原版中大量初始化就存在的问题
 
