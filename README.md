@@ -1,6 +1,10 @@
 # electronvueup
 
-> An electron-vue project
+> An electron-vue 升级版
+解决electron升级中的很多问题，少踩点坑。
+1.提升electron版本为22.1.0，解决了之前版本2.0.2的诸多问题
+2.修复了原版中大量初始化就存在的问题
+3.直接引入了elementUi
 
 #### Build Setup
 
